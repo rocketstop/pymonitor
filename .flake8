@@ -1,0 +1,13 @@
+[flake8]
+exclude = .git
+          build
+          dist
+          __pycache__
+          .tox
+          .coverage
+          MANIFEST
+          venv
+max-complexity = 10
+max-line-length = 120
+output-file = build/reports/flake8/output.txt
+format = pylint
