@@ -35,6 +35,10 @@ def dict_to_string(target: Dict) -> str:
     :return:
     """
     value: str = ""
+
+    if target is None:
+        return value
+
     for k, v in target.items():
         value += k+": {" + str(v) + "} "
     return value
